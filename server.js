@@ -4,7 +4,6 @@ const cors = require('cors')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
-const port = process.env.PORT || 3001;
 const app = express()
 const http = require('http').createServer(app);
 
@@ -38,7 +37,7 @@ app.get('/**', (req, res) => {
 })
 
 
-
+const port = process.env.PORT || 3001;
 http.listen(port, () => {
     console.log(`server running on port ${port}`);
 });
