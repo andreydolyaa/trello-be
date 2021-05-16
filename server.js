@@ -10,7 +10,7 @@ const http = require('http').createServer(app);
 app.use(cookieParser())
 app.use(express.json());
 app.use(session({
-    secret: 'board secret',
+    secret: '',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
