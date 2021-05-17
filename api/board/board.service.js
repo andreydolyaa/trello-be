@@ -143,7 +143,8 @@ function _createEmptyBoard(data) {
                 "cards": [
                 ]
             }
-        ]
+        ],
+        "actions":[]
     }
 }
 
